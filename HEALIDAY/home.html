@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Healiday</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+
+  <body>
+    <style>
+          body {
+              background-color: #F4F0CA;
+                }
+            .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+             }
+    </style>
+
+    <header>
+      <img src="logo.jpg" alt="logo healiday" height="70px" width="100px">
+      <strong>H E A L I D A Y</strong>
+    </header>
+
+  <div class="nav">
+    <ul>
+  <li><a class="active"><span class="material-symbols-outlined">home</span></a></li>
+  <li><a href="about.html">ABOUT</a></li>
+  <li><a href="city.html">CITY</a></li>
+  <li><a href="suburb.html">SUBURB</a></li>
+  <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <h2 class="center">TOUR GUIDE</h2>
+
+<div class="container light-grey" style="padding:60px 16px" id="team">
+  <div class=" row-padding " style="margin-top:64px">
+    <div class=" col l4 m4 margin-bottom">
+      <div class="card">
+        <img src="guide-spencer.jpg" class="image-3" style="width:100%">
+        <div class="container center">
+          <h3>Spencer Selover</h3>
+          <h4>Klang, Selangor</h4>
+          <p class="center"> Hi! Let's tour Malaysia together with me. I'm sure you will be mesmerized!</p>
+          <h5>Rate : <br>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star_half</span>
+          17 reviews <br> <br>
+          Language : <br>
+          <ul style="text-align:left">
+            <li>English <span class="material-symbols-outlined">thumb_up_off</span></li>
+            <li>Malay   <span class="material-symbols-outlined">thumb_up_off</span></li>
+            <li>Korean  <span class="material-symbols-outlined">thumb_up_off</span></li>
+            <li>Spanish <span class="material-symbols-outlined">thumb_down_off</span></li>
+          </ul>
+          </h5>
+
+          <button type="button" name="button" onclick="GuideForm1()">Message Spencer</button>
+          <div id="formSpencer"></div>
+        </div>
+    </div>
+  </div>
+    <div class=" col l4 m4 margin-bottom">
+      <div class="card">
+       <img src="guide-amelia.jpg" class="image-3" style="width:100%">
+        <div class="container center">
+          <h3>Fety Amelia</h3>
+          <h4>Alor Gajah, Melaka</h4>
+          <p class="center"> Hi! I can assure you happiness if you chose to tour Malaysia with me. </p>
+          <h5>Rate : <br>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>
+          25 reviews <br> <br>
+          Language : <br>
+          <ul style="text-align:left">
+            <li>English <span class="material-symbols-outlined">thumb_up_off</span></li>
+            <li>Malay   <span class="material-symbols-outlined">thumb_up_off</span></li>
+            <li>Indonesian  <span class="material-symbols-outlined">thumb_up_off</span></li>
+            <li>France <span class="material-symbols-outlined">thumb_down_off</span></li>
+          </ul>
+          </h5>
+
+          <button type="button" name="button" onclick="GuideForm2()">Message Amelia</button>
+          <div id="formAmelia"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col l4 m4 margin-bottom">
+      <div class="card">
+       <img src="guide-mostafa.jpg" class="image-3" style="width:100%">
+        <div class="container center">
+          <h3>Mostafa Sannad</h3>
+          <h4>Muar, Johor</h4>
+          <p class="center"> Hi! Trust me, i am an easygoing person. Let's see Malaysia's city together! </p>
+          <h5>Rate : <br>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star_half</span>
+          30 reviews <br> <br>
+          Language : <br>
+          <ul style="text-align:left">
+            <li>English <span class="material-symbols-outlined">thumb_up_off</span></li>
+            <li>Malay   <span class="material-symbols-outlined">thumb_up_off</span></li>
+            <li>Korean  <span class="material-symbols-outlined">thumb_up_off</span></li>
+            <li>Spanish <span class="material-symbols-outlined">thumb_up_off</span></li>
+          </ul>
+          </h5>
+
+          <button type="button" name="button" onclick="GuideForm3()">Message Mostafa</button>
+          <div id="formMostafa"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col l4 m4 margin-bottom">
+      <div class="card">
+       <img src="guide-lesti.jpg" class="image-3" style="width:100%">
+        <div class="container center">
+          <h3>Lesti Sarah</h3>
+          <h4>Kuching, Sarawak</h4>
+          <p class="center"> Hi! Sarawak = Sarah. Come and view scenery together with me! </p>
+          <h5>Rate : <br>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star_half</span>
+          8 reviews <br> <br>
+          Language : <br>
+          <ul style="text-align:left">
+            <li>English     <span class="material-symbols-outlined">thumb_up_off</span></li>
+            <li>Malay       <span class="material-symbols-outlined">thumb_up_off</span></li>
+            <li>Sarawakian  <span class="material-symbols-outlined">thumb_up_off</span></li>
+          </ul>
+          </h5>
+
+          <button type="button" name="button" onclick="GuideForm4()">Message Lesti</button>
+          <div id="formLesti"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col l4 m4 margin-bottom">
+      <div class="card">
+       <img src="guide-kindel.jpg" class="image-3" style="width:100%">
+        <div class="container center">
+          <h3>Kindel Chua</h3>
+          <h4>Georgetown, Penang</h4>
+          <p class="center"> Hi!! Let's eat nasi kandar together !</p>
+          <h5>Rate : <br>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star_half</span>
+          5 reviews <br> <br>
+          Language : <br>
+          <ul style="text-align:left">
+            <li>English   <span class="material-symbols-outlined">thumb_up_off</span></li>
+            <li>Malay     <span class="material-symbols-outlined">thumb_up_off</span></li>
+            <li>Mandarin  <span class="material-symbols-outlined">thumb_up_off</span></li>
+          </ul>
+          </h5>
+          <br>
+          <button type="button" name="button" onclick="GuideForm5()">Message Kindel</button>
+          <div id="formKindel"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col l4 m4 margin-bottom">
+      <div class="card">
+       <img src="guide-andy.jpg" class="image-3" style="width:100%">
+        <div class="container center">
+          <h3>Andy Priyanka</h3>
+          <h4>Ipoh, Perak</h4>
+          <p class="center"> Hi! Let's tour Kellie's Castle. </p>
+          <h5>Rate : <br>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>
+          27 reviews <br> <br>
+          Language : <br>
+          <ul style="text-align:left">
+            <li>English <span class="material-symbols-outlined">thumb_up_off</span></li>
+            <li>Malay   <span class="material-symbols-outlined">thumb_up_off</span></li>
+            <li>Tamil   <span class="material-symbols-outlined">thumb_up_off</span></li>
+          </ul>
+          </h5>
+          <br>
+          <button type="button" name="button" onclick="GuideForm6()">Message Andy</button>
+          <div id="formAndy"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="card">
+      <div class="container center">
+        <h2 id="contact">Interested in Being A Tour Guide? Fill this form!</h3>
+          <div class = join>
+            <a href="guide.html"><button type="button" name="Join" onclick="Join()">Join</button></a>
+          </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="rowfooter">
+    <div class="columnfooter">
+      <a href="https://www.instagram.com/healidaymy/"><img src="instagram.png" alt="instagram logo" height="50px" width="50px" style="left:600px; position: absolute;"></a>
+    </div>
+    <div class="columnfooter">
+      <a href="https://twitter.com/healidaymy"><img src="twitter.png" alt="twitter logo" height="50px" width="50px"></a>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

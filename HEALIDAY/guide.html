@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <style>
+          body {
+              background-color: #F4F0CA;
+                }
+            .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+             }
+    </style>
+
+    <header>
+      <img src="logo.jpg" alt="logo healiday" height="70px" width="100px">
+      <strong>H E A L I D A Y</strong>
+    </header>
+
+  <div class="nav">
+    <ul>
+  <li><a class="active"><span class="material-symbols-outlined">home</span></a></li>
+  <li><a href="about.html">ABOUT</a></li>
+  <li><a href="city.html">CITY</a></li>
+  <li><a href="suburb.html">SUBURB</a></li>
+  <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <h2 class="center">GUIDE FORM</h2>
+
+    <form name="myForm" form action="myForm.html" method="get">
+<table class="form-style">
+<tr>
+   <td>
+      <label>
+         Name <span class="required">*</span>
+      </label>
+   </td>
+   <td>
+      <input type="text" name="entry.1869361254" class="long" required/>
+      <span class="error" id="errorname"></span>
+   </td>
+</tr>
+<tr>
+   <td>
+      <label>
+        Email Address <span class="required">*</span>
+      </label>
+   </td>
+   <td>
+      <input type="email" name="entry.2064389163" class="long" required/>
+      <span class="error" id="erroremail"></span>
+   </td>
+</tr>
+<tr>
+   <td>
+      <label>
+         Interests <span class="required">*</span>
+      </label>
+   </td>
+   <td>
+      <input type="text" name="entry.1890277176" class="long" required/>
+      <span class="error" id="errorinterest"></span>
+   </td>
+</tr>
+<tr>
+   <td>
+      <label>
+         Phone No <span class="required">*</span>
+      </label>
+   </td>
+   <td>
+      <input type="text" name="entry.1480096189" class="long"></input>
+      <span class="error" id="errorphoneNo"></span>
+   </td>
+</tr>
+
+<tr>
+   <td>
+      <label>
+         Skills <span class="required">*</span>
+      </label>
+   </td>
+   <td>
+      <input type="text" name="entry.1480096189" class="long"></input>
+      <span class="error" id="errorskill"></span>
+   </td>
+</tr>
+<tr>
+   <td></td>
+   <td>
+      <input type="submit" value="Submit">
+   </td>
+</tr>
+</table>
+</form>
+
+<script>
+     $(document).ready(function(){
+       $("#flip").hover(function(){
+         $(".panel").slideToggle("slow");
+       });
+     });
+
+   function validateForm(){
+     var name = document.forms["myForm"]["name"];
+     var email = document.forms["myForm"]["email"];
+     var interest = document.forms["myForm"]["interest"];
+     var phoneNo = document.forms["myForm"]["phoneNo"];
+     var skill = document.forms["myForm"]["skill"];
+
+     if (name.value == "")
+     {
+      document.getElementById('errorname').innerHTML="Please enter a valid name";
+      name.focus();
+      return false;
+     }
+
+     if (email.value == "")
+     {
+      document.getElementById('erroremail').innerHTML="Please enter a valid email address";
+      email.focus();
+      return false;
+     }
+
+     if (email.value.indexOf("@", 0) < 0)
+     {
+      document.getElementById('erroremail').innerHTML="Please enter a valid email address";
+      email.focus();
+      return false;
+     }
+
+     if (email.value.indexOf(".", 0) < 0)
+     {
+      document.getElementById('erroremail').innerHTML="Please enter a valid email address";
+      email.focus();
+      return false;
+     }
+
+     if (fieldStudy.value == "")
+     {
+      document.getElementById('errorinterest').innerHTML="Please enter your interests";
+      interest.focus();
+      return false;
+     }
+
+     if (phoneNo.value == "")
+     {
+      document.getElementById('errorphoneNo').innerHTML="Please enter a valid phone No";
+      phoneNo.focus();
+      return false;
+     }
+
+     if (skill.value == "")
+     {
+      document.getElementById('errorskill').innerHTML="Please enter any skills you have";
+      skill.focus();
+      return false;
+     }
+
+     else{alert('The form has been submitted');
+     }
+     return true;
+   }
+
+ </script>
+
+ <footer>
+   <div class="rowfooter">
+     <div class="columnfooter">
+       <a href="https://www.instagram.com/healidaymy/"><img src="instagram.png" alt="instagram logo" height="50px" width="50px" style="left:600px; position: absolute;"></a>
+     </div>
+   <div class="columnfooter">
+       <a href="https://twitter.com/healidaymy"><img src="twitter.png" alt="twitter logo" height="50px" width="50px"></a>
+     </div>
+   </div>
+ </footer>
+
+  </body>
+</html>
